@@ -10,7 +10,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // prepare sql and bind parameters
-    $stmt = $conn->prepare("SELECT * FROM feed");
+    $stmt = $conn->prepare("SELECT * FROM feed ORDER BY created DESC");
     $stmt->execute();
     }
 catch(PDOException $e)
