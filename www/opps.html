@@ -14,9 +14,9 @@
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-        <div class="phone-nav zed">
+       <div class="phone-nav zed">
             <a href="index.html">
-                <div id="homeButton" class="col-xs-3 button-right clicked">
+                <div id="homeButton" class="col-xs-3 button-right not-clicked">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                 </div>
             </a>
@@ -26,11 +26,11 @@
                 </div>
             </a>
             <a href="opps.php">
-                <div id="oppButton" class="col-xs-3 button-left not-clicked">
+                <div id="oppButton" class="col-xs-3 button-left clicked">
                     <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
                 </div>   
             </a>
-            <a href="create-feed.html">
+            <a href="create-op.html">
                 <div id="oppButton" class="col-xs-3 button-left not-clicked">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                 </div>
@@ -41,46 +41,59 @@
         
             <div class="row feedcontainer">
 
-                <div id="feed">
+                
+                <div id="opp">
                     <div class=" text-center">
-                        <div class=" row homeHeader">VolunTeam News Feed</div>
+                        <div class=" row col-sm-12 homeHeader" id="opp">VolunTeam Opportnities</div>
                     </div>
                     <div class="outer">
-                        <div class=" col-sm-12 feedItem">
-                           
-                            <img class="profilePic" src="img/profile.jpg" width="50" height="50">
-                            <h4 class="profileName">Billy Howard</h4>
-                            <p class="comment">Having a great time participating in this event !</p>
-                            <img class="commentPic"src="img/volunteam1.jpg" width="100%" height="300">
-
+                         <a href="http://localhost/Runcorp/www/some-op.php?id=1">
+                         <div class=" oppItem">
+                            <div class="oppTitle"><h3>ENVIRONMENT VOLUNTEERING</h3></div>
+                            <div class="oppInfo">
+                                <h4>for</h4><p>FRIENDS OF MAROOCHY REGIONAL BUSHLAND BOTANIC GARDENS</p>
+                                <h4>at</h4><p>TANAWHA, QLD</p>
+                                <p>Garden bed development and maintenance; planting, including watering, weeding, pruning, transplanting and propagating. Light construction of concrete paths and track maintenance</p>
+                            </div>
                         </div>
-                        <div class=" col-sm-12 feedItem">
-                           
-                            <img class="profilePic" src="img/profile.jpg" width="50" height="50">
-                            <h4 class="profileName">Pete Lombard</h4>
-                            <p class="comment">Feels great giving back to the community I love :)</p>
-                            <img class="commentPic"src="img/volunteam2.jpg" width="100%" height="300">
+                        </a>
 
-                        </div>
-                        <div class=" col-sm-6 feedItem">
-                           
-                            <img class="profilePic" src="img/profile.jpg" width="50" height="50">
-                            <h4 class="profileName">Sara Yema</h4>
-                            <p class="comment">Hard work but so rewarding. Will sleep well tonight</p>
-                            <img class="commentPic"src="img/volunteam3.jpg" width="100%" height="300">
 
+                         <a href="http://localhost/Runcorp/www/some-op.php?id=2">
+                         <div class=" oppItem">
+                            <div class="oppTitle"><h3>MONTHLY BEACH CLEANUP</h3></div>
+                            <div class="oppInfo">
+                                <h4>for</h4><p>SURFRIDER FOUNDATION SUNSHINE COAST</p>
+                                <h4>at</h4><p>BUDDINA, QLD</p>
+                                <p>Hi there!! We need a few leaders up and down the coast, to oversee, or be part of, our beach cleanup activities. It is a very easy job, and has been going for years. We are expanding, and would like to allocate individual areas of coastline, to various sub groups, of the Sunshine Coast Surfrider foundation. We usually run the clean-ups every 3rd Sunday of the month, and we will be rotating the areas to be cleaned, from now on!!</p>
+                            </div>
                         </div>
-                        <div class=" col-sm-6 feedItem">
-                           
-                            <img class="profilePic" src="img/profile.jpg" width="50" height="50">
-                            <h4 class="profileName">Jenny Mioh</h4>
-                            <p class="comment">Thank you VolunTeam for helping me get excited about volunteering</p>
-                            <img class="commentPic"src="img/volunteam4.jpg" width="100%" height="300">
+                        </a>
 
+                         <a href="http://localhost/Runcorp/www/some-op.php?id=3">
+                         <div class=" oppItem">
+                            <div class="oppTitle"><h3>CONSERVATION ACTIVITIES </h3></div>
+                            <div class="oppInfo">
+                                <h4>for</h4><p>CONSERVATION VOLUNTEERS AUSTRALIA</p>
+                                <h4>at</h4><p>PALLARENDA, QLD</p>
+                                <p>Help us to conserve the natural areas in this fabulous tropical city. Creekwatch - join the team on Tuesdays or Wednesdays in the field or help out in the office with database entry on Mondays.</p>
+                            </div>
                         </div>
+                        </a>
+
+                         <a href="http://localhost/Runcorp/www/some-op.php?id=4">
+                         <div class=" oppItem">
+                            <div class="oppTitle"><h3>RAINFOREST REGENERATION</h3></div>
+                            <div class="oppInfo">
+                                <h4>for</h4><p>TAMBORINE BUSH VOLUNTEERS</p>
+                                <h4>at</h4><p>TAMBORINE, QLD</p>
+                                <p>The Tamborine Bush Volunteers was formed in 1988 with the aim of establishing a community-group to work with the Queensland Parks and Wildlife Service on park maintenance in Tamborine National Park. The role of the group is to remove weed from the national park and to replant rainforest trees.</p>
+                            </div>
+                        </div>
+                        </a>
+
                     </div>
                 </div>
-               
             </div>
 
 
@@ -169,9 +182,9 @@
             }
         </script>
 
-         <script>
+        <script>
             $(document).ready(function() {
-               
+                
 
             });
 
