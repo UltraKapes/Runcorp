@@ -280,6 +280,7 @@ height: 100vh;
 .profileName{
     width:50%;
     margin-left: 60px;
+    
     overflow: hidden;
     color: #00746b;
 
@@ -295,7 +296,10 @@ height: 100vh;
     margin-bottom: 10px;
 }
 
-
+body{
+    overflow-y: scroll;
+overflow-x: hidden;
+}
 
 
 
