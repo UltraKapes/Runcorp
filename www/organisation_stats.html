@@ -46,8 +46,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-8 col-lg-offset-2" id="picture">
-                    <img src="img/graph.png" alt="graph" class="img-responsive">
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                    <img src="img/graph.png" alt="graph" class="img-responsive" id="picture">
                 </div>
             </div>
             <div class="row">
@@ -105,6 +105,46 @@
                     });
                 });
             })
+        </script>
+
+         <script type="text/javascript">
+
+            // Wait for the page to load first
+            window.onload = function() {
+
+              //Get a reference to the link on the page
+              // with an id of "mylink"
+              var a = document.getElementById("button1");
+              var b = document.getElementById("button2");
+              var c = document.getElementById("button3");
+
+              //Set code to run when the link is clicked
+              // by assigning a function to "onclick"
+              a.onclick = function() {
+
+                // Your code here...
+
+                //If you don't want the link to actually 
+                // redirect the browser to another page,
+                // "google.com" in our example here, then
+                // return false at the end of this block.
+                // Note that this also prevents event bubbling,
+                // which is probably what we want here, but won't 
+                // always be the case.
+                document.getElementById('picture').src = 'img/graph.png';
+                return false;
+              }
+
+              b.onclick = function() {
+                document.getElementById('picture').src = 'img/graph1.png';
+                return false;
+              }
+
+              c.onclick = function() {
+                alert("test");
+                return false;
+              }
+            }
         </script>
 
     </body>
