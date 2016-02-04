@@ -63,7 +63,7 @@ $conn = null;
         <div class="container text-right">
             <div class="row">
                 <div class="col-xs-5 col-xs-offset-1 col-lg-5 col-lg-offset-0">
-                    <h1>St Vincent De Pauls</h1>
+                    <h1><?php echo $row['title']?></h1>
                 </div>
                 <a href="join-thingo.html" class="btn btn-default col-xs-2 col-lg-1 col-xs-offset-3 col-lg-offset-6 push-down green" value="Sign Up">Join</a>
                 <div class="col-xs-1">
