@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Runcorp.iml" filepath="$PROJECT_DIR$/Runcorp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/cordova-plugin-whitelist.iml" filepath="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/src/cordova-plugin-whitelist.iml" />
     </modules>
   </component>
 </project>

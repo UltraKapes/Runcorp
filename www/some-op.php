@@ -38,14 +38,14 @@ $conn = null;
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
         <div class="phone-nav zed">
-            <a href="index.html">
-                <div id="homeButton" class="col-xs-4 button-right clicked">HOME</div>
+            <a href="index.php">
+                <div id="homeButton" class="col-xs-3 button-right clicked">HOME</div>
             </a>
             <a href="organisation_stats.html">
-                <div id="statsButton" class="col-xs-4 not-clicked">STATS</div>
+                <div id="statsButton" class="col-xs-3 not-clicked">STATS</div>
             </a>
             <a href="opps.php">
-                <div id="oppButton" class="col-xs-4 button-left not-clicked">OPP</div>
+                <div id="oppButton" class="col-xs-3 button-left not-clicked">OPP</div>
             </a>
             <a href="create-feed.html">
                 <div id="oppButton" class="col-xs-3 button-left not-clicked">
@@ -59,7 +59,7 @@ $conn = null;
                 <div class="col-xs-5 col-xs-offset-1 col-lg-5 col-lg-offset-0">
                     <h1>St Vincent De Pauls</h1>
                 </div>
-                <input class="btn btn-default col-xs-2 col-lg-1 col-xs-offset-3 col-lg-offset-6 push-down green" onclick="testAlert()" value="Sign Up">
+                <a href="join-thingo.html" class="btn btn-default col-xs-2 col-lg-1 col-xs-offset-3 col-lg-offset-6 push-down green" value="Sign Up">Join</a>
                 <div class="col-xs-1">
 
                 </div>
