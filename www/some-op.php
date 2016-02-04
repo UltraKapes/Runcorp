@@ -1,3 +1,26 @@
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$dbname = "volunteam";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // prepare sql and bind parameters
+    $stmt = $conn->prepare("SELECT * FROM events WHERE id=:id");
+    $stmt->execute(array(':id' => $_GET['id']));
+    $row = $stmt->fetch();
+    }
+catch(PDOException $e)
+    {
+    echo "Error: " . $e->getMessage();
+    }
+$conn = null;
+?>
+        
 <!DOCTYPE html>
 <html>
     <head>
@@ -44,23 +67,33 @@
                     <p>Charity Name: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>Some name</p>
+                    <p><?php echo $row['charity_name'] ?></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-4 text-right">
                     <p>Approval Status: </p>
                 </div>
-                <div class="col-xs-8 text-left">
-                    <p class="pending">Pending</p>
-                </div>
+                <?php if ($row['status'] == 1): ?>
+                    <div class="col-xs-8 text-left">
+                        <p class="pending">Pending</p>
+                    </div>
+                <?php elseif ($row['status'] == 2): ?>
+                    <div class="col-xs-8 text-left">
+                        <p class="pending">Approved</p>
+                    </div>
+                <?php elseif ($row['status'] == 3): ?>
+                    <div class="col-xs-8 text-left">
+                        <p class="pending">Denied</p>
+                    </div>
+                <?php endif; ?>
             </div>
             <div class="row">
                 <div class="col-xs-4 text-right">
                     <p>Description: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text </p>
+                    <p><?php echo $row['description']?></p>
                 </div>
             </div>
             <div class="row">
@@ -68,7 +101,7 @@
                     <p>Address: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>123 Fake St</p>
+                    <p><?php echo $row['address']?></p>
                 </div>
             </div>
             <div class="row">
@@ -76,7 +109,7 @@
                     <p>Contact Name: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>Jane Smith</p>
+                    <p><?php echo $row['contact_name']?></p>
                 </div>
             </div>
             <div class="row">
@@ -84,7 +117,7 @@
                     <p>Contact Number: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>0403 232 212</p>
+                    <p><?php echo $row['contact_number']?></p>
                 </div>
             </div>
             <div class="row">
@@ -92,7 +125,7 @@
                     <p>Contact email: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>jane.smith@charity.com.au</p>
+                    <p><?php echo $row['contact_email']?></p>
                 </div>
             </div>
             <div class="row">
@@ -100,15 +133,7 @@
                     <p>Max Allowed People: </p>
                 </div>
                 <div class="col-xs-8 text-left">
-                    <p>15</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 text-right">
-                    <p>Contact Name: </p>
-                </div>
-                <div class="col-xs-8 text-left">
-                    <p>Jane Smith</p>
+                    <p><?php echo $row['max_volunteers']?></p>
                 </div>
             </div>
         </div>
