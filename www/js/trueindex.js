@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $("#homeButton").click(function(){
+        $("#opp").hide();
+        $("#feed").show();
+    });
+    $("#showbutton").click(function(){
+        $("p").show();
+    });
+});
