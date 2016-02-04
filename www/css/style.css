@@ -182,18 +182,47 @@ footer .glyphicon {
     width: 100%;
     text-align: center;
     list-style: none;
-    background-color: #00746b;
+
 }
 
 .phone-nav-clicked {
     background-color: #00a79a;
 }
 
-.phone-nav div li a {
-    color: #E4E4E4;
+.phone-nav div {
+
 }
 
-.phone-nav div li a:hover {
+.button-right {
+    border-right: 1px solid #e6e6e6;
+}
+
+.button-left {
+    border-left: 1px solid #e6e6e6;
+}
+
+.not-clicked {
+    background-color: #00746b;
+    padding: 15px 0;
+    color: #ffffff;
+}
+
+.clicked {
+    background-color: #00a79a;
+    padding: 15px 0;
+    color: #ffffff;
+}
+
+.phone-nav div a {
+
+    width: 100%;
+}
+
+.phone-nav div :hover {
+    background-color: #00746b;
+}
+
+.phone-nav div a:hover {
     color: #FFFFFF;
     text-decoration: none;
 }
