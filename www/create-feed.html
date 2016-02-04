@@ -45,26 +45,26 @@
 
         <div class="container">
             <form action="add-feed.php" method="post" class="col-lg-4 col-lg-offset-4">
-            <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name"  maxlength="100">
-                </div>
-            <div class="form-group">
-                    <label for="charity">Charity</label>
-                    <input type="text" class="form-control" id="charity" name="charity"  maxlength="100">
+
+                <div class="form-group">
+                    <label for="personName">Your Name</label>
+                    <input type="text" class="form-control" id="personName" name="personName"  maxlength="100">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <input type="text" class="form-control" id="message" name="message"  maxlength="100">
+                    <label for="charityName">Charity</label>
+                    <input type="text" class="form-control" id="charityName" name="charityName"  maxlength="100">
+
                 </div>
                 <div class="form-group">
-                    <label for="photo">Add Photo</label>
-                        
-                        <input id="uploadFile" type="file" name="image" class="img" />
-                        <div class="full">
-                        <div id="imagePreview"></div>
-                        </div>
-                   
+                    <label for="comment">Message</label>
+                    <input type="text" class="form-control" id="comment" name="comment"  maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="photo">Add Photo</label>     
+                    <input id="uploadFile" type="file" name="image" class="img" />
+                    <div class="full">
+                    <div id="imagePreview"></div>
+                    </div>
                 </div>
                 <div class="form-group">
                 <button type="submit" class="customSubmit btn btn-success btn-block">Submit</button>
