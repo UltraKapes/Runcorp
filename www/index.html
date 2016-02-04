@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <!-- Theme Made By www.w3schools.com - No Copyright -->
-        <title>Volunteam</title>
+        <title>Volunteam - Organisation Stats</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -11,64 +11,146 @@
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <div class="phone-nav">
-        <a href="#services">
-            <div id="homeButton" class="col-xs-4 button-right clicked">HOME</div>
-        </a>
-        <a href="#services">
-            <div id="statsButton" class="col-xs-4 not-clicked">STATS</div>
-        </a>
-        <a href="#portfolio">
-            <div id="oppButton" class="col-xs-4 button-left not-clicked">OPP</div>
-        </a>
-    </div>
-
-        <!-- A Post -->
-        <div id="services" class="container-fluid text-center">
-            <h2>SERVICES</h2>
-
+        <div class="phone-nav zed">
+            <a href="#services">
+                <div id="homeButton" class="col-xs-4 button-right clicked">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </div>
+            </a>
+            <a href="#services">
+                <div id="statsButton" class="col-xs-4 not-clicked">
+                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </div>
+            </a>
+            <a href="#portfolio">
+                <div id="oppButton" class="col-xs-4 button-left not-clicked">
+                    <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+                </div>
+            </a>
         </div>
 
+        <div class="container">
+            <div style="height:50px;"></div>
+        </div>
 
+        <div class="container text-center">
+            <div class="row">
+                <h1>Organisation Stats</h1>
+            </div>
+        </div>
 
-        <!-- Add Google Maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+        <div class="container" id="showHide">
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="show1">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">2016</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="show2">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">2015</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="show3">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">2014</p>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-            function initialize() {
-                var mapProp = {
-                    center:myCenter,
-                    zoom:12,
-                    scrollwheel:false,
-                    draggable:false,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP
-                };
+        <div class="container" id="year2016">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                    <img src="img/graph.png" alt="graph" class="img-responsive" id="picture">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button1">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button2">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button3">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        <div class="container" id="year2015">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                    <img src="img/graph1.png" alt="graph" class="img-responsive" id="picture2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button4">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button"5>
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button6">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                var marker = new google.maps.Marker({
-                    position:myCenter,
-                });
-
-                marker.setMap(map);
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
-
-        <footer class="container-fluid text-center">
-            
-        </footer>
+        <div class="container" id="year2014">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                    <img src="img/graph.png" alt="graph" class="img-responsive" id="picture3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button7">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button8">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button9">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div style="height:100px;"></div>
+        </div>
 
         <script>
             $(document).ready(function(){
@@ -104,5 +186,80 @@
                 });
             })
         </script>
+
+         <script type="text/javascript">
+
+            // Wait for the page to load first
+            window.onload = function() {
+
+              //Get a reference to the link on the page
+              // with an id of "mylink"
+              var a = document.getElementById("button1");
+              var b = document.getElementById("button2");
+              var c = document.getElementById("button3");
+
+              //Set code to run when the link is clicked
+              // by assigning a function to "onclick"
+              a.onclick = function() {
+
+                // Your code here...
+
+                //If you don't want the link to actually 
+                // redirect the browser to another page,
+                // "google.com" in our example here, then
+                // return false at the end of this block.
+                // Note that this also prevents event bubbling,
+                // which is probably what we want here, but won't 
+                // always be the case.
+                document.getElementById('picture').src = 'img/graph.png';
+                return false;
+              }
+
+              b.onclick = function() {
+                document.getElementById('picture').src = 'img/graph1.png';
+                return false;
+              }
+
+              c.onclick = function() {
+                alert("test");
+                return false;
+              }
+            }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $("#year2014").hide();
+                $("#year2015").hide();
+
+                $("#show1").click(function(e) {
+                    $("#year2014").hide();
+                    $("#year2015").hide();
+                    $("#year2016").show();
+                });
+
+                $("#show2").click(function(e) {
+                    $("#year2014").hide();
+                    $("#year2015").show();
+                    $("#year2016").hide();
+                });
+
+                $("#show3").click(function(e) {
+                    $("#year2014").show();
+                    $("#year2015").hide();
+                    $("#year2016").hide();
+                });
+
+                $("#homeButton").click(function(e) {
+                    $("#year2014").show();
+                    $("#year2015").show();
+                    $("#year2016").show();
+                });
+            });
+
+            
+
+        </script>
+
     </body>
 </html>

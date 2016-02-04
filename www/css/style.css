@@ -226,3 +226,7 @@ footer .glyphicon {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.zed {
+    z-index: 1000;
+}
