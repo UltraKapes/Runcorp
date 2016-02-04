@@ -15,7 +15,7 @@
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
         <div class="phone-nav zed">
-            <a href="index.html">
+            <a href="index.php">
                 <div id="homeButton" class="col-xs-3 button-right not-clicked">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                 </div>
@@ -47,19 +47,16 @@
             <div class="row">
                 <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="show1">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">2016</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="show2">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">2015</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="show3">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">2014</p>
                     </a>
                 </div>
@@ -69,25 +66,22 @@
         <div class="container" id="year2016">
             <div class="row">
                 <div class="col-sm-12 col-lg-8 col-lg-offset-2">
-                    <img src="img/graph.png" alt="graph" class="img-responsive" id="picture">
+                    <img src="img/Org-Month-2016.jpeg" alt="graph" class="img-responsive" id="picture">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button1">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Months</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button2">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Charity</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button3">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Domain</p>
                     </a>
                 </div>
@@ -97,25 +91,22 @@
         <div class="container" id="year2015">
             <div class="row">
                 <div class="col-sm-12 col-lg-8 col-lg-offset-2">
-                    <img src="img/graph1.png" alt="graph" class="img-responsive" id="picture2">
+                    <img src="img/Org-Month-2015.jpeg" alt="graph" class="img-responsive" id="picture2">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button4">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Months</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button5">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Charity</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button6">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Domain</p>
                     </a>
                 </div>
@@ -125,25 +116,22 @@
         <div class="container" id="year2014">
             <div class="row">
                 <div class="col-sm-12 col-lg-8 col-lg-offset-2">
-                    <img src="img/graph.png" alt="graph" class="img-responsive" id="picture3">
+                    <img src="img/Org-Month-2014.jpeg" alt="graph" class="img-responsive" id="picture3">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button7">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Months</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button8">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Charity</p>
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button9">
                     <a>
-                        <img src="img/circle.png" class="img-responsive center-block dot">
                         <p class="text-center">Domain</p>
                     </a>
                 </div>
@@ -221,47 +209,47 @@
                 // Note that this also prevents event bubbling,
                 // which is probably what we want here, but won't 
                 // always be the case.
-                document.getElementById('picture').src = 'img/Org.jpeg';
+                document.getElementById('picture').src = 'img/Org-Month-2016.jpeg';
                 return false;
               }
 
               b.onclick = function() {
-                document.getElementById('picture').src = 'img/Org-Charity.jpeg';
+                document.getElementById('picture').src = 'img/Org-Charity-2016.jpeg';
                 return false;
               }
 
               c.onclick = function() {
-                document.getElementById('picture').src = 'img/Org-Domain.jpeg';
+                document.getElementById('picture').src = 'img/Org-Domain-2016.jpeg';
                 return false;
               }
 
               d.onclick = function() {
-                document.getElementById('picture2').src = 'img/Org.jpeg';
+                document.getElementById('picture2').src = 'img/Org-Month-2015.jpeg';
                 return false;
               }
 
               e.onclick = function() {
-                document.getElementById('picture2').src = 'img/Org-Charity.jpeg';
+                document.getElementById('picture2').src = 'img/Org-Charity-2015.jpeg';
                 return false;
               }
 
               f.onclick = function() {
-                document.getElementById('picture2').src = 'img/Org-Domain.jpeg';
+                document.getElementById('picture2').src = 'img/Org-Domain-2015.jpeg';
                 return false;
               }
 
               g.onclick = function() {
-                document.getElementById('picture3').src = 'img/Org-Domain.jpeg';
+                document.getElementById('picture3').src = 'img/Org-Month-2014.jpeg';
                 return false;
               }
 
               h.onclick = function() {
-                document.getElementById('picture3').src = 'img/Org-Charity.jpeg';
+                document.getElementById('picture3').src = 'img/Org-Charity-2014.jpeg';
                 return false;
               }
 
               i.onclick = function() {
-                document.getElementById('picture3').src = 'img/Org-Domain.jpeg';
+                document.getElementById('picture3').src = 'img/Org-Domain-2014.jpeg';
                 return false;
               }
             }

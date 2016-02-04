@@ -38,7 +38,7 @@ $conn = null;
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
         <div class="phone-nav zed">
-            <a href="index.html">
+            <a href="index.php">
                 <div id="homeButton" class="col-xs-3 button-right clicked">HOME</div>
             </a>
             <a href="organisation_stats.html">
