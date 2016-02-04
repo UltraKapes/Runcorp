@@ -44,7 +44,30 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" id="showHide">
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="show1">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">2016</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="show2">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">2015</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="show3">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">2014</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="year2016">
             <div class="row">
                 <div class="col-sm-12 col-lg-8 col-lg-offset-2">
                     <img src="img/graph.png" alt="graph" class="img-responsive" id="picture">
@@ -64,6 +87,62 @@
                     </a>
                 </div>
                 <div class="col-xs-2 col-lg-2" id="button3">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="year2015">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                    <img src="img/graph1.png" alt="graph" class="img-responsive" id="picture2">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button4">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button"5>
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button6">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="year2014">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+                    <img src="img/graph.png" alt="graph" class="img-responsive" id="picture3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-lg-2 col-lg-offset-3 col-xs-offset-3" id="button7">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button8">
+                    <a>
+                        <img src="img/circle.png" class="img-responsive center-block">
+                        <p class="text-center">Something</p>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-lg-2" id="button9">
                     <a>
                         <img src="img/circle.png" class="img-responsive center-block">
                         <p class="text-center">Something</p>
@@ -145,6 +224,34 @@
                 return false;
               }
             }
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $("#year2014").hide();
+                $("#year2015").hide();
+
+                $("#show1").click(function(e) {
+                    $("#year2014").hide();
+                    $("#year2015").hide();
+                    $("#year2016").show();
+                });
+
+                $("#show2").click(function(e) {
+                    $("#year2014").hide();
+                    $("#year2015").show();
+                    $("#year2016").hide();
+                });
+
+                $("#show3").click(function(e) {
+                    $("#year2014").show();
+                    $("#year2015").hide();
+                    $("#year2016").hide();
+                });
+            });
+
+            
+
         </script>
 
     </body>
