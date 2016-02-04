@@ -14,25 +14,17 @@
     </head>
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#myPage">Logo</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#feed">FEED</a></li>
-                        <li><a href="#services">OPPORTUNITIES</a></li>
-                        <li><a href="#portfolio">STATS</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="phone-nav zed">
+            <a href="#services">
+                <div id="homeButton" class="col-xs-4 button-right clicked">HOME</div>
+            </a>
+            <a href="#services">
+                <div id="statsButton" class="col-xs-4 not-clicked">STATS</div>
+            </a>
+            <a href="#portfolio">
+                <div id="oppButton" class="col-xs-4 button-left not-clicked">OPP</div>
+            </a>
+        </div>
 
         <div class="container">
             <div style="height:50px;"></div>
@@ -151,6 +143,10 @@
             </div>
         </div>
 
+        <div class="container">
+            <div style="height:100px;"></div>
+        </div>
+
         <script>
             $(document).ready(function(){
                 // Add smooth scrolling to all links in navbar + footer link
@@ -247,6 +243,12 @@
                     $("#year2014").show();
                     $("#year2015").hide();
                     $("#year2016").hide();
+                });
+
+                $("#homeButton").click(function(e) {
+                    $("#year2014").show();
+                    $("#year2015").show();
+                    $("#year2016").show();
                 });
             });
 
