@@ -193,6 +193,14 @@
               var b = document.getElementById("button2");
               var c = document.getElementById("button3");
 
+              var d = document.getElementById("button3");
+              var e = document.getElementById("button3");
+              var f = document.getElementById("button3");
+
+              var g = document.getElementById("button3");
+              var h = document.getElementById("button3");
+              var i = document.getElementById("button3");
+
               //Set code to run when the link is clicked
               // by assigning a function to "onclick"
               a.onclick = function() {
@@ -216,7 +224,37 @@
               }
 
               c.onclick = function() {
-                alert("test");
+                document.getElementById('picture').src = 'img/graph1.png';
+                return false;
+              }
+
+              d.onclick = function() {
+                document.getElementById('picture2').src = 'img/graph1.png';
+                return false;
+              }
+
+              e.onclick = function() {
+                document.getElementById('picture2').src = 'img/graph1.png';
+                return false;
+              }
+
+              f.onclick = function() {
+                document.getElementById('picture2').src = 'img/graph1.png';
+                return false;
+              }
+
+              g.onclick = function() {
+                document.getElementById('picture3').src = 'img/graph1.png';
+                return false;
+              }
+
+              h.onclick = function() {
+                document.getElementById('picture3').src = 'img/graph1.png';
+                return false;
+              }
+
+              i.onclick = function() {
+                document.getElementById('picture3').src = 'img/graph1.png';
                 return false;
               }
             }
@@ -243,12 +281,6 @@
                     $("#year2014").show();
                     $("#year2015").hide();
                     $("#year2016").hide();
-                });
-
-                $("#homeButton").click(function(e) {
-                    $("#year2014").show();
-                    $("#year2015").show();
-                    $("#year2016").show();
                 });
             });
 
