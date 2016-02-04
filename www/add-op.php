@@ -26,6 +26,7 @@
         $stmt->execute();
 
         echo "New records created successfully";
+        header('Location: opps.html');
         }
     catch(PDOException $e)
         {
