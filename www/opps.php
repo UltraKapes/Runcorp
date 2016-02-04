@@ -1,3 +1,25 @@
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$dbname = "volunteam";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    // prepare sql and bind parameters
+    $stmt = $conn->prepare("SELECT * FROM events");
+    $stmt->execute();
+    }
+catch(PDOException $e)
+    {
+    echo "Error: " . $e->getMessage();
+    }
+$conn = null;
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -47,9 +69,12 @@
                         <div class=" row col-sm-12 homeHeader" id="opp">VolunTeam Opportnities</div>
                     </div>
                     <div class="outer">
-                         <a href="http://localhost/Runcorp/www/some-op.php?id=1">
+
+                        <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
+                        
+                         <a href="http://localhost/Runcorp/www/some-op.php?id=<?php echo $row['id']?>">
                          <div class=" oppItem">
-                            <div class="oppTitle"><h3>ENVIRONMENT VOLUNTEERING</h3></div>
+                            <div class="oppTitle"><h3><?php echo $row['title']?></h3></div>
                             <div class="oppInfo">
                                 <h4>for</h4><p>FRIENDS OF MAROOCHY REGIONAL BUSHLAND BOTANIC GARDENS</p>
                                 <h4>at</h4><p>TANAWHA, QLD</p>
@@ -57,50 +82,10 @@
                             </div>
                         </div>
                         </a>
-
-
-                         <a href="http://localhost/Runcorp/www/some-op.php?id=2">
-                         <div class=" oppItem">
-                            <div class="oppTitle"><h3>MONTHLY BEACH CLEANUP</h3></div>
-                            <div class="oppInfo">
-                                <h4>for</h4><p>SURFRIDER FOUNDATION SUNSHINE COAST</p>
-                                <h4>at</h4><p>BUDDINA, QLD</p>
-                                <p>Hi there!! We need a few leaders up and down the coast, to oversee, or be part of, our beach cleanup activities. It is a very easy job, and has been going for years. We are expanding, and would like to allocate individual areas of coastline, to various sub groups, of the Sunshine Coast Surfrider foundation. We usually run the clean-ups every 3rd Sunday of the month, and we will be rotating the areas to be cleaned, from now on!!</p>
-                            </div>
-                        </div>
-                        </a>
-
-                         <a href="http://localhost/Runcorp/www/some-op.php?id=3">
-                         <div class=" oppItem">
-                            <div class="oppTitle"><h3>CONSERVATION ACTIVITIES </h3></div>
-                            <div class="oppInfo">
-                                <h4>for</h4><p>CONSERVATION VOLUNTEERS AUSTRALIA</p>
-                                <h4>at</h4><p>PALLARENDA, QLD</p>
-                                <p>Help us to conserve the natural areas in this fabulous tropical city. Creekwatch - join the team on Tuesdays or Wednesdays in the field or help out in the office with database entry on Mondays.</p>
-                            </div>
-                        </div>
-                        </a>
-
-                         <a href="http://localhost/Runcorp/www/some-op.php?id=4">
-                         <div class=" oppItem">
-                            <div class="oppTitle"><h3>RAINFOREST REGENERATION</h3></div>
-                            <div class="oppInfo">
-                                <h4>for</h4><p>TAMBORINE BUSH VOLUNTEERS</p>
-                                <h4>at</h4><p>TAMBORINE, QLD</p>
-                                <p>The Tamborine Bush Volunteers was formed in 1988 with the aim of establishing a community-group to work with the Queensland Parks and Wildlife Service on park maintenance in Tamborine National Park. The role of the group is to remove weed from the national park and to replant rainforest trees.</p>
-                            </div>
-                        </div>
-                        </a>
-
+                        <?php }?>
                     </div>
                 </div>
             </div>
-
-
-
-                    
-        
-
         <div class="container" style="
     margin-bottom: 52px;
 ">
