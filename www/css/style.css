@@ -230,3 +230,21 @@ footer .glyphicon {
 .zed {
     z-index: 1000;
 }
+
+.dot {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.push-down {
+    margin-top: 27px;
+}
+
+.green {
+    background-color: #00746B;
+    color: white;
+}
+
+.pending {
+    background-color: yellow;
+}

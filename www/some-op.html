@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>Volunteam - Some Op</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <div class="phone-nav zed">
+            <a href="#services">
+                <div id="homeButton" class="col-xs-4 button-right clicked">HOME</div>
+            </a>
+            <a href="#services">
+                <div id="statsButton" class="col-xs-4 not-clicked">STATS</div>
+            </a>
+            <a href="#portfolio">
+                <div id="oppButton" class="col-xs-4 button-left not-clicked">OPP</div>
+            </a>
+        </div>
+
+        <div class="container text-right">
+            <div class="row">
+                <div class="col-xs-5 col-xs-offset-1 col-lg-5 col-lg-offset-0">
+                    <h1>Some Op</h1>
+                </div>
+                <input class="btn btn-default col-xs-2 col-lg-1 push-down green" onclick="testAlert()" value="Sign Up">
+                <div class="col-xs-1">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Charity Name: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>Some name</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Approval Status: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p class="pending">Pending</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Description: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text This is some text </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Address: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>123 Fake St</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Contact Name: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>Jane Smith</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Contact Number: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>0403 232 212</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Contact email: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>jane.smith@charity.com.au</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Max Allowed People: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>15</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 text-right">
+                    <p>Contact Name: </p>
+                </div>
+                <div class="col-xs-8 text-left">
+                    <p>Jane Smith</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div style="height:100px;"></div>
+        </div>
+
+        <script>
+            function testAlert() {
+                alert("test");
+            }
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                });
+
+                $(window).scroll(function() {
+                    $(".slideanim").each(function(){
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
+    </body>
+</html>
