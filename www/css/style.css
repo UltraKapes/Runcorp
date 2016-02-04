@@ -231,6 +231,7 @@ footer .glyphicon {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
 .feedcontainer{
 background-color: #D3D3D3;
 height: 100vh;
@@ -266,3 +267,21 @@ height: 100vh;
     padding-right: 30px;
     padding-left: 30px;   
  }
+
+.dot {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.push-down {
+    margin-top: 27px;
+}
+
+.green {
+    background-color: #00746B;
+    color: white;
+}
+
+.pending {
+    background-color: yellow;
+}
