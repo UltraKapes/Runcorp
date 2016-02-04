@@ -230,3 +230,39 @@ footer .glyphicon {
 .zed {
     z-index: 1000;
 }
+
+.feedcontainer{
+background-color: #D3D3D3;
+height: 100vh;
+
+}
+
+.homeHeader{
+
+    background-color: #00746b;
+    color:white;
+    height: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.feedItem{
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;  
+}
+
+
+#feed{
+    width:100%;
+}
+
+
+.outer{
+    width:100%;
+    display: block; margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;   
+ }
