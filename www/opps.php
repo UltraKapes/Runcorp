@@ -76,9 +76,9 @@ $conn = null;
                          <div class=" oppItem">
                             <div class="oppTitle"><h3><?php echo $row['title']?></h3></div>
                             <div class="oppInfo">
-                                <h4>for</h4><p>FRIENDS OF MAROOCHY REGIONAL BUSHLAND BOTANIC GARDENS</p>
-                                <h4>at</h4><p>TANAWHA, QLD</p>
-                                <p>Garden bed development and maintenance; planting, including watering, weeding, pruning, transplanting and propagating. Light construction of concrete paths and track maintenance</p>
+                                <h4>For</h4><p><?php echo $row['charity_name']?></p>
+                                <h4>At</h4><p><?php echo $row['address']?></p>
+                                <p><?php echo $row['description']?></p>
                             </div>
                         </div>
                         </a>
