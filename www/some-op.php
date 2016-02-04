@@ -29,7 +29,7 @@ $conn = null;
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/form.css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -38,14 +38,19 @@ $conn = null;
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
         <div class="phone-nav zed">
-            <a href="#services">
+            <a href="index.html">
                 <div id="homeButton" class="col-xs-4 button-right clicked">HOME</div>
             </a>
-            <a href="#services">
+            <a href="organisation_stats.html">
                 <div id="statsButton" class="col-xs-4 not-clicked">STATS</div>
             </a>
-            <a href="#portfolio">
+            <a href="opps.php">
                 <div id="oppButton" class="col-xs-4 button-left not-clicked">OPP</div>
+            </a>
+            <a href="create-feed.html">
+                <div id="oppButton" class="col-xs-3 button-left not-clicked">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </div>
             </a>
         </div>
 
