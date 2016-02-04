@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Theme Made By www.w3schools.com - No Copyright -->
-        <title>Volunteam - Create Opportunity</title>
+        <title>Volunteam - Create Feed</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -30,7 +30,7 @@
                     <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
                 </div>   
             </a>
-            <a href="create-op.html">
+            <a href="create-feed.html">
                 <div id="oppButton" class="col-xs-3 button-left clicked">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                 </div>
@@ -39,39 +39,28 @@
 
         <div class="container text-center">
             <div class="row">
-                <h1>Create Volunteering Opportunity</h1>
+                <h1>Post to Feed</h1>
             </div>
         </div>
 
         <div class="container">
-            <form action="add-op.php" method="post" class="col-lg-4 col-lg-offset-4">
-                <div class="form-group">
-                    <label for="charityName">Organisation/Charity Name:</label>
-                    <input type="text" class="form-control" id="charityName" name="charityName" >
+            <form action="add-feed.php" method="post" class="col-lg-4 col-lg-offset-4">
+            <div class="form-group">
+                    <label for="charity">Charity</label>
+                    <input type="text" class="form-control" id="charity" name="charity"  maxlength="100">
                 </div>
                 <div class="form-group">
-                    <label for="description">Activity Description:</label>
-                    <textarea class="form-control" id="description" name="description" rows="3" ></textarea>
+                    <label for="message">Message</label>
+                    <input type="text" class="form-control" id="message" name="message"  maxlength="100">
                 </div>
                 <div class="form-group">
-                    <label for="address">Address:</label>
-                    <input type="text" class="form-control" id="address" name="address" >
-                </div>
-                <div class="form-group">
-                    <label for="contactName">Contact Name:</label>
-                    <input type="text" class="form-control" id="contactName" name="contactName" >
-                </div>
-                <div class="form-group">
-                    <label for="contactNumber">Contact Number:</label>
-                    <input type="text" class="form-control" id="contactNumber" name="contactNumber" >
-                </div>
-                <div class="form-group">
-                    <label for="contactEmail">Contact Email:</label>
-                    <input type="email" class="form-control" id="contactEmail" name="contactEmail" >
-                </div>
-                <div class="form-group">
-                    <label for="maxVolunteers">Max Volunteers:</label>
-                    <input type="text" class="form-control" id="maxVolunteers" name="maxVolunteers" >
+                    <label for="photo">Add Photo</label>
+                        
+                        <input id="uploadFile" type="file" name="image" class="img" />
+                        <div class="full">
+                        <div id="imagePreview"></div>
+                        </div>
+                   
                 </div>
                 <div class="form-group">
                 <button type="submit" class="customSubmit btn btn-success btn-block">Submit</button>
@@ -82,9 +71,13 @@
         <div class="container">
             <div style="height:100px;"></div>
         </div>
+      
 
         <script>
             $(document).ready(function(){
+
+                if( $('#imagePreview').is(':empty') ) {$('#imagePreview').hide();}
+
                 // Add smooth scrolling to all links in navbar + footer link
                 $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
@@ -117,6 +110,27 @@
                 });
             })
         </script>
+        <script type="text/javascript">
+$(function() {
+    $("#uploadFile").on("change", function()
+    {   if($("#imagePreview").is(":hidden")){$("#imagePreview").show();}; 
+       
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+ 
+        if (/^image/.test( files[0].type)){ // only image file
+             $("imagePreview").show();
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+ 
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreview").css("background-image", "url("+this.result+")");
+            }
+        }
+    });
+});
+</script>
+
 
     </body>
 </html>
