@@ -39,13 +39,19 @@ $conn = null;
 
         <div class="phone-nav zed">
             <a href="index.php">
-                <div id="homeButton" class="col-xs-4 button-right clicked">HOME</div>
+                <div id="homeButton" class="col-xs-3 button-right clicked">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </div>
             </a>
             <a href="organisation_stats.html">
-                <div id="statsButton" class="col-xs-4 not-clicked">STATS</div>
+                <div id="statsButton" class="col-xs-3 not-clicked">
+                    <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+                </div>
             </a>
             <a href="opps.php">
-                <div id="oppButton" class="col-xs-4 button-left not-clicked">OPP</div>
+                <div id="oppButton" class="col-xs-3 button-left not-clicked">
+                    <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+                </div>   
             </a>
             <a href="create-feed.html">
                 <div id="oppButton" class="col-xs-3 button-left not-clicked">
