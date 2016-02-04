@@ -285,3 +285,12 @@ height: 100vh;
 .pending {
     background-color: yellow;
 }
+
+.bottom-border {
+    border-bottom: 1px solid #777777;
+    padding-bottom: 20px;
+}
+
+.top-padding {
+    padding-top: 15px;
+}
