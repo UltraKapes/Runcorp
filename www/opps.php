@@ -72,7 +72,7 @@ $conn = null;
 
                         <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
                         
-                         <a href="http://localhost/Runcorp/www/some-op.php?id=<?php echo $row['id']?>">
+                         <a href="some-op.php?id=<?php echo $row['id']?>">
                          <div class=" oppItem">
                             <div class="oppTitle"><h3><?php echo $row['title']?></h3></div>
                             <div class="oppInfo">
